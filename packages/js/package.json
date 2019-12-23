@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "lint": "eslint --ext .js --max-warnings 5 ./",
+    "lint": "eslint --ext .js --max-warnings 5 ./ --ignore-path ../../.eslintignore",
     "test": "yarn lint"
   },
   "devDependencies": {
