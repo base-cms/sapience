@@ -10,6 +10,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'sapience.[contenthash:8].js',
   },
+  devServer: {
+    contentBase: './dist',
+  },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
