@@ -1,0 +1,12 @@
+{
+  "name": "@base-cms/sapience-js",
+  "version": "0.0.0",
+  "description": "Sapience JavaScript tracking library.",
+  "main": "src/index.js",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "repository": "https://github.com/base-cms/sapience/tree/master/packages/js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
