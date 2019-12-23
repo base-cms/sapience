@@ -8,6 +8,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open --port 53120",
     "lint": "eslint --ext .js --max-warnings 5 ./ --ignore-path ../../.eslintignore",
     "test": "yarn lint"
   },
