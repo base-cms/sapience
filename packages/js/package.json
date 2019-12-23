@@ -1,0 +1,40 @@
+{
+  "name": "@base-cms/sapience-js",
+  "version": "0.0.0",
+  "description": "Sapience JavaScript tracking library.",
+  "main": "src/index.js",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "repository": "https://github.com/base-cms/sapience/tree/master/packages/js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open --port 53120",
+    "lint": "eslint --ext .js --max-warnings 5 ./ --ignore-path ../../.eslintignore",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "core-js": "^3.6.0",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "handlebars": "^4.5.3",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
