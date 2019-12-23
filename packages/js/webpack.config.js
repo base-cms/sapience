@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
@@ -11,6 +12,14 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.hbs$/, loader: 'handlebars-loader' },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'SapienceJS Sandbox',
+      template: path.resolve(__dirname, 'src/index.hbs'),
+      inject: false,
+    }),
+  ],
 };
