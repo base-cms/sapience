@@ -15,7 +15,7 @@ module.exports = (api) => {
         },
         useBuiltIns: 'usage',
         corejs: '3.6',
-        debug: true,
+        debug: false,
       },
     ],
   ];
