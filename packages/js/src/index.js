@@ -1,4 +1,4 @@
-import sapience from './sapience';
+import app from './app';
 
 const WINDOW_VAR_NAME = 'SapienceObject';
 const queueName = window[WINDOW_VAR_NAME];
@@ -10,7 +10,7 @@ const commandQueue = window[queueName];
 const execute = (stack) => {
   for (let i = 0; i < stack.length; i += 1) {
     const args = stack[i];
-    sapience(...args);
+    app(...args);
   }
 };
 
@@ -33,4 +33,4 @@ if (Array.isArray(queue)) {
 }
 
 // Replace the queue with the sapience app.
-window[queueName] = sapience;
+window[queueName] = app;
