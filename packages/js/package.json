@@ -6,12 +6,16 @@
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms/sapience/tree/master/packages/js",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "lint": "eslint --ext .js --max-warnings 5 ./",
+    "test": "yarn lint"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
